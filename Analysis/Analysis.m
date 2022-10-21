@@ -1,0 +1,3 @@
+function Analysis = Analysis(Sim)  if isempty(Sim.Analysis)    Analysis = struct();  else
+    Analysis = Sim.Analysis;  endif    do    choice = menu("Analysis", {"Select fragments..","Plot PDF","Plot trajectories","Info","Export..","Back"});    switch choice      case 0        Analysis = Sim.Analysis;      case 1              case 2              case 3              case 4              case 5            endswitch
+  until choice == 0 || choice == 6endfunction
